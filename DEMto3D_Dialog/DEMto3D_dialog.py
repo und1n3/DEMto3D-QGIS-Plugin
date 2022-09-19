@@ -91,7 +91,7 @@ class DEMto3DDialog(QDialog, Ui_DEMto3DDialogBase):
         self.canvas.destinationCrsChanged.connect(self.setCanvasCRS)
         self.setCanvasCRS()
 
-        self.units = self.map_crs.mapUnits()
+        self.units = 0
         # --- QgsUnitTypes.DistanceUnit ---
         # DistanceMeters         0 Meters.
         # DistanceKilometers     1 Kilometers.
